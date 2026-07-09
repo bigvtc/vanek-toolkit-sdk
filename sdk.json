@@ -1,1 +1,115 @@
-
+{
+  "no_cam_reset": {
+    "1.26.20": [
+      {
+        "version": 1,
+        "type": "nop",
+        "signature": "E8 ?? ?? ?? ?? 4C 89 F1 E8 ?? ?? ?? ?? F3 0F 10 4B 08",
+        "nop_len": 5
+      }
+    ],
+    "1.1.5": [
+      {
+        "version": 1,
+        "type": "nop",
+        "signature": "FF 90 ? ? ? ? ? ? ? 48 8B D6 44 8B 4C 24",
+        "nop_len": 2
+      }
+    ],
+    "1.26.30": [
+      {
+        "version": 1,
+        "type": "nop",
+        "signature": "4C 8B A6 ? ? ? ? F3 41 0F 10 46",
+        "offset": 7,
+        "nop_len": 298
+      }
+    ]
+  },
+  "no_hurt_cam": {
+    "1.16.100": [
+      {
+        "version": 1,
+        "type": "asm",
+        "signature": "0F 8E ? ? ? ? 66 0F 6E C0 0F 5B C0 F3 0F 5E F0",
+        "instruction": "jmp 0x162 nop"
+      }
+    ],
+    "1.1.5": [
+      {
+        "version": 1,
+        "type": "nop",
+        "signature": "66 44 0F 6E 83 ? ? ? ? 45 0F 5B C0 44 0F 29 4C 24",
+        "nop_len": 9
+      }
+    ]
+  },
+  "auto_sprint": {
+    "1.16.100": [
+      {
+        "version": 1,
+        "type": "asm",
+        "signature": "0F B6 41 ? 40 32 F6",
+        "instruction": "mov ax,01"
+      }
+    ],
+    "1.1.5": [
+      {
+        "version": 1,
+        "type": "asm",
+        "signature": "0F B6 41 ? 40 32 ED",
+        "instruction": "mov ax,01"
+      }
+    ]
+  },
+  "gui_scale": {
+    "1.16.100": {
+      "version": 1,
+      "type": "direct",
+      "signature": "00 00 ? ? 00 00 A0 40 00 00 C0 40",
+      "value": "00 00 E0"
+    }
+  },
+  "item_delay_fix": {
+    "1.16.100": [
+      {
+        "version": 1,
+        "type": "nop",
+        "signature": "FF D7 ? ? ? 49 8B CE FF 90 ? ? ? ? 32 DB",
+        "nop_len": 2
+      }
+    ],
+    "1.1.5": [
+      {
+        "version": 1,
+        "type": "nop",
+        "signature": "48 89 86 ? ? ? ? 48 83 7E ? 00",
+        "nop_len": 7
+      }
+    ],
+    "1.26.20": [
+      {
+        "version": 1,
+        "type": "nop",
+        "signature": "FF 15 ? ? ? ? ? ? ? 48 8B 80 ? ? ? ? 48 89 F1 FF 15 ? ? ? ? 45 84 F6",
+        "nop_len": 6
+      }
+    ],
+    "1.26.30": [
+      {
+        "version": 1,
+        "type": "nop",
+        "signature": "FF 15 ? ? ? ? ? ? ? 48 8B 80 ? ? ? ? 48 89 F1 FF 15 ? ? ? ? 45 84 F6",
+        "nop_len": 6
+      }
+    ],
+    "1.26.32": [
+      {
+        "version": 1,
+        "type": "nop",
+        "signature": "FF 15 ? ? ? ? ? ? ? 48 8B 80 ? ? ? ? 48 89 F1 FF 15 ? ? ? ? 45 84 F6",
+        "nop_len": 6
+      }
+    ]
+  }
+}
