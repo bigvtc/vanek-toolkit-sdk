@@ -63,12 +63,14 @@
     ]
   },
   "gui_scale": {
-    "1.16.100": {
-      "version": 1,
-      "type": "direct",
-      "signature": "00 00 ? ? 00 00 A0 40 00 00 C0 40",
-      "value": "00 00 E0"
-    }
+    "1.16.100": [
+      {
+        "version": 1,
+        "type": "direct",
+        "signature": "00 00 ? ? 00 00 A0 40 00 00 C0 40",
+        "value": "00 00 E0"
+      }
+    ]
   },
   "item_delay_fix": {
     "1.16.100": [
