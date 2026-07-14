@@ -14,7 +14,7 @@
     {
       "version": 2,
       "game_version": {
-        "1.26.30": "direct"
+        "1.26.3*": "regex"
       },
       "entry": {
         "type": "nop",
@@ -106,7 +106,7 @@
       "entry": {
         "type": "direct",
         "signature": "00 00 ? ? 00 00 A0 40 00 00 C0 40",
-        "patch_sig": "00 00 E0"
+        "patch": "00 00 E0"
       }
     }
   ],
