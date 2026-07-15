@@ -16,7 +16,7 @@
       "game_version": {
         "1.26.3*": "regex"
       },
-      "entry": {
+      "entry": { 
         "type": "nop",
         "signature": "4C 8B A6 ? ? ? ? F3 41 0F 10 46",
         "offset": 7,
@@ -32,6 +32,17 @@
         "type": "nop",
         "signature": "FF 90 ? ? ? ? ? ? ? 48 8B D6 44 8B 4C 24",
         "nop_len": 2
+      }
+    },
+    {
+      "version": 2,
+      "game_version": {
+        "1.21.*": "regex"
+      },
+      "entry": {
+        "type": "nop",
+        "signature": "E8 ? ? ? ? 48 8B 03 48 8D 94 24 ? ? ? ? 48 8B 4B",
+        "nop_len": 6
       }
     }
   ],
@@ -56,6 +67,17 @@
         "type": "nop",
         "signature": "66 44 0F 6E 83 ? ? ? ? 45 0F 5B C0 44 0F 29 4C 24",
         "nop_len": 9
+      }
+    },
+    {
+      "version": 2,
+      "game_version": {
+        "1.21.*": "regex"
+      },
+      "entry": {
+        "type": "nop",
+        "signature": "eb ? 0f 57 c0 f3 0f 11 0b",
+        "nop_len": 2
       }
     }
   ],
@@ -131,6 +153,56 @@
       "entry": {
         "type": "nop",
         "signature": "FF 15 ? ? ? ? ? ? ? 48 8B 80 ? ? ? ? 48 89 F1 FF 15 ? ? ? ? 45 84 F6",
+        "nop_len": 6
+      }
+    },
+    {
+      "version": 2,
+      "game_version": {
+        "1.21.*": "regex"
+      },
+      "entry": {
+        "type": "nop",
+        "signature": "FF 15 ? ? ? ? 48 8B ? 48 8B ? 48 8B ? ? ? ? ? FF 15 ? ? ? ? 32 DB",
+        "nop_len": 6
+      }
+    }
+  ],
+  "(mcp)third_person_nametag": [
+    {
+      "version": 2,
+      "game_version": {
+        "1.21.*": "regex"
+      },
+      "entry": {
+        "type": "nop",
+        "signature": "0f 84 ? ? ? ? 49 8b 45 ? 49 8b cd 48 8b 80 ? ? ? ? ff 15 ? ? ? ? 84 c0 0f 85",
+        "nop_len": 6
+      }
+    }
+  ],
+  "(mcp)play_screen_fix": [
+    {
+      "version": 2,
+      "game_version": {
+        "1.21.*": "regex"
+      },
+      "entry": {
+        "type": "direct",
+        "signature": "6D 63 2D 61 62 2D 6E 65 77 2D 70 6C 61 79 2D 73 63 72 65 65 6E 2D",
+        "patch": "20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20"
+      }
+    }
+  ],
+  "(mcp)minimal_view_bobbing": [
+    {
+      "version": 2,
+      "game_version": {
+        "1.21.*": "regex"
+      },
+      "entry": {
+        "type": "nop",
+        "signature": "FF 15 ? ? ? ? 80 7C 24 60 ? 0F 84 ? ? ? ? 48 89",
         "nop_len": 6
       }
     }
