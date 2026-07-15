@@ -99,6 +99,7 @@
       "version": 2,
       "game_version": {
         "1.1.5": "regex",
+        "1.16.*": "regex",
         "1.20.*": "regex",
         "1.21.*": "regex",
         "1.26.*": "regex"
