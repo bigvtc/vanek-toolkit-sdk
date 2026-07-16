@@ -105,23 +105,6 @@
       }
     }
   ],
-  "gui_scale": [
-    {
-      "version": 2,
-      "game_version": {
-        "1.1.5": "regex",
-        "1.16.*": "regex",
-        "1.20.*": "regex",
-        "1.21.*": "regex",
-        "1.26.*": "regex"
-      },
-      "entry": {
-        "type": "direct",
-        "signature": "00 00 ? ? 00 00 A0 40 00 00 C0 40",
-        "patch": "00 00 E0"
-      }
-    }
-  ],
   "item_delay_fix": [
     {
       "version": 2,
@@ -178,6 +161,23 @@
         "type": "nop",
         "signature": "0f 84 ? ? ? ? 49 8b 45 ? 49 8b cd 48 8b 80 ? ? ? ? ff 15 ? ? ? ? 84 c0 0f 85",
         "nop_len": 6
+      }
+    }
+  ],
+  "(mcp)gui_scale": [
+    {
+      "version": 2,
+      "game_version": {
+        "1.1.5": "regex",
+        "1.16.*": "regex",
+        "1.20.*": "regex",
+        "1.21.*": "regex",
+        "1.26.*": "regex"
+      },
+      "entry": {
+        "type": "direct",
+        "signature": "00 00 ? ? 00 00 A0 40 00 00 C0 40",
+        "patch": "00 00 E0"
       }
     }
   ],
