@@ -16,7 +16,7 @@
       "game_version": {
         "1.26.3*": "regex"
       },
-      "entry": { 
+      "entry": {
         "type": "nop",
         "signature": "4C 8B A6 ? ? ? ? F3 41 0F 10 46",
         "offset": 7,
@@ -55,7 +55,7 @@
       "entry": {
         "type": "asm",
         "signature": "0F 8E ? ? ? ? 66 0F 6E C0 0F 5B C0 F3 0F 5E F0",
-        "instruction": "jmp 0x162 nop"
+        "instruction": "jmp 0x162; nop"
       }
     },
     {
@@ -204,6 +204,20 @@
         "type": "nop",
         "signature": "FF 15 ? ? ? ? 80 7C 24 60 ? 0F 84 ? ? ? ? 48 89",
         "nop_len": 6
+      }
+    }
+  ],
+  "key patcher": [
+    {
+      "version": 2,
+      "game_version": {
+        "1.1[0-9].*": "regex",
+        "1.[0-9].*": "regex"
+      },
+      "entry": {
+        "type": "ascii",
+        "signature": "4D 48 59 77 45 41 59 48 4B 6F 5A 49 7A 6A 30 43 41 51 59 46 4B 34 45 45 41 43 49 44 59 67 41 45",
+        "text": "MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAECRXueJeTDqNRRgJi/vlRufByu/2G0i2Ebt6YMar5QX/R0DIIyrJMcUpruK4QveTfJSTp3Shlq4Gk34cD/4GUWwkv0DVuzeuB+tXija7HBxii03NHDbPAD0AKnLr2wdAp"
       }
     }
   ]
