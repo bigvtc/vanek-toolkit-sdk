@@ -185,7 +185,8 @@
     {
       "version": 2,
       "game_version": {
-        "1.21.*": "regex"
+        "1.21.*": "regex",
+        "1.20.*": "regex"
       },
       "entry": {
         "type": "direct",
