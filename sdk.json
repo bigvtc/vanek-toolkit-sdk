@@ -216,7 +216,7 @@
       },
       "entry": {
         "type": "ascii",
-        "signature": "4D 48 59 77 45 41 59 48 4B 6F 5A 49 7A 6A 30 43 41 51 59 46 4B 34 45 45 41 43 49 44 59 67 41 45",
+        "ascii_signature": "MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAE8ELkixyLcwlZryUQcu1TvPOmI2B7vX83ndnWRUaXm74wFfa5f/lwQNTfrLVHa2PmenpGI6JhIMUJaWZrjmMj90NoKNFSNBuKdm8rYiXsfaz3K36x/1U26HpG0ZxK/V1V",
         "text": "MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAECRXueJeTDqNRRgJi/vlRufByu/2G0i2Ebt6YMar5QX/R0DIIyrJMcUpruK4QveTfJSTp3Shlq4Gk34cD/4GUWwkv0DVuzeuB+tXija7HBxii03NHDbPAD0AKnLr2wdAp"
       }
     }
